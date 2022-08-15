@@ -1,0 +1,442 @@
+.main {
+    width: 1350px;
+    margin: 40px auto 0;
+}
+
+.main .top1 {
+    display: flex;
+}
+
+/* 左侧部分 */
+.main .top1 .left {
+    width: 820px;
+    height: 380px;
+    margin-right: 40px;
+}
+
+.main .top1 .left .swiper {
+    display: flex;
+    width: 820px;
+    height: 340px;
+    overflow: hidden;
+}
+
+.main .top1 .left .swiper li {
+    width: 820px;
+    height: 340px;
+}
+
+.main .top1 .left .swiper li .img {
+    float: left;
+    width: 820px;
+    height: 340px;
+    overflow: hidden;
+}
+
+.main .top1 .left .swiper li .img img {
+    width: 100%;
+}
+.main .top1 .left .tab {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.main .top1 .left .tab li {
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #e3e2e2;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+}
+.main .top1 .left .tab li:hover {
+    background-color: white;
+    color: #cea861;
+    border-bottom: 2px #cea861 solid;
+}
+.main .top1 .left .tab .active {
+    background-color: white;
+    color: #cea861;
+    border-bottom: 2px #cea861 solid;
+}
+
+/* 右侧部分 */
+.main .top1 .right {
+    width: 496px;
+    height: 380px;
+}
+.main .top1 .right .top {
+    width: 496px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e2e2;
+}
+.main .top1 .right .top li {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.main .top1 .right .top li:hover {
+    font-weight: 700;
+    color: #1da6ba;
+}
+.main .top1 .right .top .active {
+    font-weight: 700;
+    color: #1da6ba;
+}
+.main .top1 .right .content {
+    width: 496px;
+    height: 305px;
+}
+.main .top1 .right .content li {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e0e2e2;
+}
+.main .top1 .right .content li:last-child {
+    border-bottom: none;
+}
+.main .top1 .right .content li:hover a {
+    color: #bb9a6c;  
+}
+.main .top1 .right .content li .span {
+    color: #c5ab86;
+    width: 36px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    margin-right: 20px;
+    margin-top: 8px;
+    border: 1px solid #c5ab86;
+}
+.main .top1 .right .content li .span2 {
+    float: right;
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 600;
+}
+.main .top1 .right .content li a {
+    color: black;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+.main .top1 .right .content li:nth-child(1) {
+    width: 100%;
+    height: 59px;
+    overflow: hidden;
+    line-height: 59px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 0 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #0da0b4;
+    border-bottom: 1px solid #e0e2e2;
+}
+.main .top1 .right .bot {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #e3e2e2;
+    text-align: center;
+    line-height: 40px;
+}
+.main .top1 .right .bot:hover {
+    background-color: #d4d3d3;
+}
+
+/* -------------- */
+.main .top2 {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.top2 .lft2 {
+    width: 61%;
+}
+.lft2 .nav {
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .hot {
+    width: 20%;
+}
+.nav .sp1 {
+    font-size: 26px;
+    font-weight: 500;
+    border-left: 4px solid #0da0b4;
+    padding-left: 10px;
+}
+.nav .tit {
+    width: 80%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.tit .tit-lft span {
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    color: #597275;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+.tit .tit-lft .active {
+    color: #0da0b4;
+    font-weight: 600;
+    border-bottom: 2px solid #0da0b4;
+}
+.tit .tit-lft span:hover {
+    color: #0da0b4;
+    font-weight: 600;
+    border-bottom: 2px solid #0da0b4;
+}
+.tit .tit-rgt span {
+    font-size: 12px;
+    color: #7ea1a6;
+    cursor: pointer;
+}
+.top .rgt2 {
+    width: 40%;
+}
+
+.lft2 .cont {
+    width: 100%;
+    margin-top: 20px;
+}
+.cont .contUl {
+    display: flex;
+    justify-content: space-between;
+}
+.contUl li {
+    position: relative;
+    background-color: #fefefe;
+    transition: .2s;
+}
+.contUl li:hover {
+    margin-top: -10px;
+    transition: .2s;
+    animation: move .2s linear;
+}
+@keyframes move {
+    from {
+        margin-top: 0px;
+    }
+    to {
+        margin-top: -10px;
+    }
+}
+.contUl li:hover .show {
+    display: block;
+    opacity: 1;
+    transition: .3;
+}
+.contUl li .show {
+    position: absolute;
+    width: 193px;
+    height: 207px;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 0 5px;
+    background-color: rgba(0, 0, 0, .7);
+    opacity: 0;
+    transition: .3;
+}
+.contUl li .show h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #cdbe91;
+    margin: 60px 0 10px 0;
+}
+.contUl li .show p {
+    font-size: 12px;
+    color: #ddd;
+}
+
+.contUl li .p1 {
+    color: black;
+    font-size: 14px;
+    margin: 5px 0 12px 10px;
+}
+.contUl li .p2 {
+    color: #1da6ba;
+    font-size: 12px;
+    margin: 5px 0 12px 10px;
+}
+
+/* ---- */
+.top2 .rgt2 {
+    width: 36%;
+    margin-left: 30px;
+}
+.rgt2 .rgt2-top {
+    height: 168px;
+    display: flex;
+    justify-content: space-between;
+}
+.rgt2-top .top-right {
+    margin-left: 14px;
+}
+.top-right .box1 {
+    margin-bottom: 12px;
+}
+.rgt2 .rgt2-bot {
+    width: 100%;
+}
+.rgt2-bot ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.rgt2-bot ul li {
+    width: 112px;
+    height: 68px;
+    line-height: 68px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 14px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.rgt2-bot ul li:hover {
+    border-radius: 4px;
+    box-shadow: 0 0 10px #ccc;
+    color: #0da0b4;
+}
+
+/* ---------- */
+.main .top3 {
+    width: 100%;
+    margin-top: 30px;
+}
+.top3 .top3-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top3-nav .lft3 {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top3-nav .lft3 h2 {
+    padding-left: 10px;
+    border-left: 4px solid #0da0b4;
+    font-weight: 400;
+}
+.top3-nav .lft3 .ul {
+    display: flex;
+    justify-content: space-between;
+}
+.lft3 .ul .active {
+    color: #0da0b4;
+    font-weight: 600;
+}
+.lft3 .ul li {
+    color: #597275;
+    margin: 0 30px;
+    cursor: pointer;
+}
+.lft3 .ul li:hover {
+    color: #0da0b4;
+    font-weight: 600;
+}
+.top3-nav span {
+    font-size: 12px;
+    color: #597275;
+}
+.top3-cont {
+    margin-top: 20px;
+    height: 300px;
+    overflow: auto;
+}
+.top3-cont ul {
+   display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.top3-cont ul li {
+    text-align: center;
+    width: 103px;
+    height: 100px;
+    font-size: 12px;
+}
+
+
+
+
+/* 侧边栏 */
+.aside {
+    width: 70px;
+    position: fixed;
+    right: 0;
+    top: 25%;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    background-color: #eaeaea;
+    z-index: 999;
+}
+
+/* 底部 */
+.footer {
+    width: 100%;
+    height: 265px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    background-color: #d4d3d3;
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+    clear: both;
+    
+}
+
+.footer .left {
+    width: 40%;
+    margin: 30px ;
+}
+
+.footer .right {
+    width: 60%;
+}
+
+.footer .left .logo {
+    width: 337px;
+    height: 100px;
+    display: flex;
+}
+
+.footer .left .l-img {
+    width: 189px;
+    height: 34px;
+    margin-right: 20px;
+    background: url('https://game.gtimg.cn/images/lol/v3/topfoot-spr.png') no-repeat;
+    background-position: -216px 0;
+}
+
+.footer .left .r-img {
+    width: 88px;
+    height: 30px;
+    background: url(https://game.gtimg.cn/images/lol/v3/topfoot-spr.png) no-repeat;
+    background-position: -215px -82px;
+}
+.footer .right p {
+    margin-bottom: 6px;
+    font-size: 12px;
+    color: #9f9378;
+}

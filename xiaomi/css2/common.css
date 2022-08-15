@@ -1,0 +1,28 @@
+/* 公共样式 -> 基本样式 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(242, 244, 245);
+}
+
+div {
+    /* 怪异盒子 */
+    box-sizing: border-box;
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e33333;
+}
+
+li {
+    cursor: pointer;
+}

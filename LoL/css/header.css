@@ -1,0 +1,309 @@
+/* 头部 */
+.header {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background: url('../img/0.png') no-repeat;
+    box-shadow: 0px 20px 70px 20px inset;
+}
+
+.header .top {
+    width: 100%;
+    /* height: 130px; */
+}
+
+.header .top .nav .logo {
+    width: 160px;
+    height: 60px;
+    background: url('https://game.gtimg.cn/images/lol/v3/logo-public.png');
+}
+
+.header .nav {
+    max-width: 1358px;
+    min-width: 1200px;
+    height: 78px;
+    box-sizing: border-box;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .nav .list {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .nav .list:hover+.navShow {
+    opacity: 1;
+    height: 295px;
+}
+
+.header .nav .list li {
+    margin-left: 50px;
+    text-align: center;
+}
+
+.header .nav ul a {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+}
+
+.header .nav ul .span {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.header .nav .person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .nav .person .icon div {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.header .nav .person .icon img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.header .nav .person .photoTitle {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav .person .photoTitle .img {
+    width: 48px;
+    height: 48px;
+    margin: 0 15px;
+}
+
+.header .nav .person .photoTitle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header .nav .person .photoTitle .name {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* show */
+.header .top .navShow {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 9;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.header .top .navShow:hover {
+    opacity: 1;
+    height: 295px;
+}
+
+.header .navShow ul {
+    width: 42%;
+    /* height: 270px; */
+    display: flex;
+    justify-content: space-around;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+
+.header .navShow ul li {
+    width: 20%;
+}
+
+.header .navShow ul li a {
+    display: block;
+    width: 100%;
+    height: 29px;
+    overflow: visible;
+    line-height: 29px;
+    color: #e1e1e1;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ************* */
+
+.header .top .nav .person .icon .rl {
+    position: relative;
+}
+
+.header .top .nav .person .icon .rl .phone:hover + .phoneShow {
+    opacity: 1;
+    height: 168px;
+}
+
+.header .top .nav .person .icon .rl .phoneShow {
+    width: 210px;
+    /* height: 168px; */
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: -104px;
+    top: 43px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.header .top .nav .person .icon .rl .phoneShow:hover {
+    opacity: 1;
+    height: 168px;
+}
+
+.header .top .nav .person .icon .rl .phoneShow::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, .5);
+    left: 92px;
+    top: -20px;
+}
+
+.header .top .nav .person .icon .phoneShow .ewm {
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    margin: 20px 50px 4px;
+}
+
+.header .top .nav .person .icon .phoneShow .dog {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 160px;
+    top: -45px;
+    z-index: 9;
+}
+
+.header .top .nav .person .icon .phoneShow p {
+    color: #cdbe91;
+    font-size: 12px;
+    width: 100%;
+    margin-top: 4px;
+    text-align: center;
+}
+
+
+/* ************* */ 
+.header .top .nav .person .photoTitle {
+    position: relative;
+}
+
+.header .top .nav .person .photoTitle .userContent {
+    position: absolute;
+    width: 280px;
+    height: auto;
+    background-color: rgba(0, 0, 0, .7);
+    display: none;
+}
+
+.header .top .nav .person .photoTitle .userContent p {
+        width: 100%;
+        height: auto;
+        font-size: 12px;
+        color: #848383;
+        text-align: center;
+        margin-top: 30px;
+        box-sizing: border-box;
+        padding: 0 20px;
+}
+
+.header .top .nav .person .photoTitle .userContent .p1 {
+    margin-top: 242px;
+
+}
+
+.header .top .nav .person .photoTitle .userContent h4 {
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    line-height: 46px;
+    background-color: black;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.header .top .nav .person .photoTitle .hov {
+    display: flex;
+    align-items: center;
+}
+
+.header .top .nav .person .photoTitle .hov:hover ~ .userContent {
+    display: block;
+}
+
+.header .top .nav .person .photoTitle .userContent:hover {
+    display: block;
+}
+
+.header .foot {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1;
+    width: 160px;
+    height: 42px;
+    line-height: 42px;
+    top: 80%;
+    left: 46%;
+    border: 1px solid rgb(245, 204, 127);
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(245, 204, 127);
+    cursor: pointer;
+}
+
+.header .footRight {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 4%;
+    bottom: 8%;
+}
+
+.header .footRight .sp1 {
+    font-size: 14px;
+    color: #888787;
+    margin-right: 20px;
+}
+
+.header .footRight .sp2 {
+    color: rgb(245, 204, 127);
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1;
+    width: 82px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid rgb(245, 204, 127);
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+

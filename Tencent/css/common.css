@@ -1,0 +1,57 @@
+/* 公共样式 -> 基本样式 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+div {
+    /* 怪异盒子 */
+    box-sizing: border-box;
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #e33333;
+}
+
+.p80 {
+    padding: 0 80px;
+}
+
+.rede33{
+    color: #E33333;
+}
+
+/*********************/
+/* 公共样式 -> 导航条 */
+.navbar{
+    width: 100%;
+    height: 30px;
+    background-color: #e3e4e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.navList ul {
+    display: flex;
+}
+
+.navList ul li {
+    margin: 0 4px;
+    color: #999999;
+}
+
+
+
+
+
+
+

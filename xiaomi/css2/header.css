@@ -1,0 +1,318 @@
+#header {
+    width: 100%;
+    height: 100%;
+}
+
+.header-top {
+    width: 100%;
+    height: 40px;
+    background-color: #1D2129;
+}
+
+.nav {
+    width: 1226px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .ul {
+    display: flex;
+}
+
+.nav .ul li {
+    margin: 0 10px;
+    font-size: 12px;
+    color: rgb(190, 190, 190);
+}
+
+.nav .ul li:hover {
+    color: white;
+}
+
+.li {
+    position: relative;
+}
+
+.li .content {
+    position: absolute;
+    width: 120px;
+    height: 140px;
+    left: -60px;
+    top: 28px;
+    background-color: #fcfbfb;
+    text-align: center;
+    z-index: 99;
+    display: none;
+}
+
+.li .content::before {
+    left: 50px;
+    top: -16px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom: 8px solid #efeeee;
+}
+
+.li .content .img {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.li .content .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.li .content p {
+    width: 100%;
+    color: black;
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+
+.rgt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right .ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right2 {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 20px;
+    color: #ccc;
+    font-size: 12px;
+    background-color: rgb(52, 51, 51);
+    cursor: pointer;
+    z-index: 999;
+}
+
+.right2:hover {
+    background-color: white;
+}
+
+.right2:hover i,
+.right2:hover span {
+    color: rgb(255, 85, 85);
+}
+
+.right2 div i {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.right2 .show {
+    position: absolute;
+    left: -200px;
+    width: 300px;
+    /* height: 80px; */
+    height: 0;
+    overflow: hidden;
+    transition: height .5s;
+    background-color: white;
+}
+
+.show p {
+    line-height: 120px;
+    color: black;
+}
+
+.Nav {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.Nav .top {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Nav .top .logo {
+    width: 56px;
+    height: 56px;
+}
+
+.top .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.top .cont .ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top .cont .ul li {
+    height: 88px;
+    line-height: 88px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.top .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 296px;
+    height: 50px;
+    border: 1px solid #ccc;
+}
+
+.top .search input {
+
+    width: 80%;
+    height: 100%;
+    padding-left: 10px;
+    border: none;
+    border-right: 1px solid #ccc;
+    /* 聚焦取消边框 */
+    outline: none;
+}
+
+.top .search .icon-sousuo {
+    box-sizing: border-box;
+    padding-left: 8px;
+    font-size: 30px;
+}
+
+.top .search .in-ul {
+    position: absolute;
+    left: -1px;
+    top: 48px;
+    width: 245.5px;
+    border: 1px solid #ff6700;
+    display: none;
+    z-index: 1000;
+    background-color: white;
+}
+
+.in-ul li {
+    margin: 11px;
+    font-size: 12px;
+}
+
+
+
+.hide,
+.hide2,
+.hide3,
+.hide4,
+.hide5,
+.hide6,
+.hide7 {
+    position: absolute;
+    width: 100%;
+    height: 201px;
+    height: 0px;
+    overflow: hidden;
+    z-index: 9999;
+    transition: height .5s;
+    background-color: white;
+}
+
+.hide .one,
+.hide2 .two,
+.hide3 .three,
+.hide4 .four,
+.hide5 .five,
+.hide6 .six,
+.hide7 .seven {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.hide .one li,
+.hide2 .two li,
+.hide3 .three li,
+.hide4 .four li,
+.hide5 .five li,
+.hide6 .six li,
+.hide7 .seven li {
+    width: 200px;
+    text-align: center;
+}
+
+.one li .img,
+.two li .img,
+.three li .img,
+.four li .img,
+.five li .img,
+.six li .img,
+.seven li .img {
+    width: 180px;
+    height: 110px;
+    border-right: 2px solid #ccc;
+}
+
+.one li:last-child .img,
+.two li:last-child .img,
+.three li:last-child .img,
+.four li:last-child .img,
+.five li:last-child .img,
+.six li:last-child .img,
+.seven li:last-child .img {
+    border-right: none;
+}
+
+.one li .img img,
+.two li .img img,
+.three li .img img,
+.four li .img img,
+.five li .img img,
+.six li .img img,
+.seven li .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.one li .p1,
+.two li .p1,
+.three li .p1,
+.four li .p1,
+.five li .p1,
+.five li .p1,
+.six li .p1,
+.seven li .p1 {
+    font-size: 12px;
+    color: rgb(37, 36, 36);
+}
+
+.one li .p2,
+.two li .p2,
+.three li .p2,
+.four li .p2,
+.five li .p2,
+.six li .p2,
+.seven li .p2 {
+    font-size: 12px;
+    color: #ff6700;
+}

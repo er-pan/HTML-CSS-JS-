@@ -1,0 +1,165 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 155px;
+    background: url('../img/header.webp') no-repeat;
+}
+.header .bili {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    width: 168px;
+    height: 78px;
+}
+.header .bili img {
+    width: 100%;
+}
+
+.header .nav {
+    width: 100%;
+    height: 64px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .nav .title {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.title li {
+    margin: 0 10px;
+    font-size: 14px;
+    height: 64px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title li .img {
+    width: 20px;
+    height: 20px;
+}
+.title li .img img {
+    width: 100%;
+}
+
+.title li:first-child .img {
+    margin-right: 3px;
+    background: url('../img/bo.png') center/cover;
+}
+.title li:last-child .img {
+    background: url('../img/xia.png') center/cover;
+}
+
+.search {
+    border-radius: 8px;
+    background-color: #fff;
+}
+.searchInputBox {
+    width: 27rem;
+    height: 38px;
+    line-height: 38px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.search input {
+    width: 85%;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    margin-left: -5px;
+    /* 聚焦取消边框 */
+    outline: none;
+    padding-left: 10px;
+    background-color: #c8c8c8;
+    opacity: .7;
+}
+.search .searchBtn {
+    width: 24px;
+    height: 24px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+.search .searchBtn img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav .person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person .photo {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: url('../img/me.webp') center/cover;
+}
+.person .list {
+    display: flex;
+    justify-content: space-between;
+}
+.person .list li {
+    font-size: 14px;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.person .list li .img {
+    width: 18px;
+    height: 18px;
+}
+.person .list li .img img {
+    width: 100%;
+}
+.person .list li:nth-child(1) .img {
+    margin-left: 12px;
+    background: url('../img/da.png') center/cover;
+}
+.person .list li:nth-child(2) .img {
+    margin-left: 5px;
+    background: url('../img/xin.png') center/cover;
+}
+.person .list li:nth-child(3) .img {
+    margin-left: 5px;
+    background: url('../img/feng.png') center/cover;
+}
+.person .list li:nth-child(4) .img {
+    margin-left: 5px;
+    background: url('../img/cang.png') center/cover;
+}
+.person .list li:nth-child(5) .img {
+    margin-left: 5px;
+    background: url('../img/lishi.png') center/cover;
+}
+.person .list li:nth-child(6) .img {
+    margin-left: 16px;
+    background: url('../img/deng.png') center/cover;
+}
+
+
+.person .send {
+    display: flex;
+    align-items: center;
+    width: 90px;
+    line-height: 38px;
+    background-color: #fb7299;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+}
+.person .send .img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 16px;
+    background: url('../img/shang.png') center/cover;
+}
